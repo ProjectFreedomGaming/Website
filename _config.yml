@@ -1,0 +1,39 @@
+title: Project Freedom
+description: An open-source fantasy gaming console for the Analog Pocket.
+
+repository: ProjectFreedomGaming/ProjectFreedom
+
+exclude:
+  - bin
+  - CNAME
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: atom.xml
+
+permalink: :title
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: :year/:month/:day/:title/
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/projectfreedom-social-card.png
+
+logo: /assets/img/logo.jpg
+
+github:
+  repository_nwo: ProjectFreedomGaming/Website
+
+forkme_nwo: ProjectFreedomGaming/ProjectFreedom

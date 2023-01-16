@@ -1,0 +1,95 @@
+{% assign t = site.data.locales[page.lang][page.lang] %}
+<!DOCTYPE html>
+<html {% if page.direction == "rtl" %}dir="rtl" {% endif %}lang="{{ page.lang }}">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {% if page.title %}
+    <title>{{ page.title }} — {{ site.title }}</title>
+    {% elsif t.subtitle %}
+    {% if page.direction == "rtl" %}
+    <title>{{ site.title }} — {{ t.subtitle }}</title>
+    {% else %}
+    <title>{{ t.subtitle }} — {{ site.title }}</title>
+    {% endif %}
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
+    {% seo title=false %}
+    {% feed_meta %}
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}" type="text/css" media="screen">
+    {% if site.data.locales and page.lang %}
+    {% assign locales = site.data.locales | sort %}
+    {% for locale in locales %}
+      {% assign lang = locale[0] %}
+      {% if lang == "en" %}
+      <link rel="alternate" hreflang="en" href="{{ site.url }}" />
+      <link rel="alternate" hreflang="x-default" href="{{ site.url }}" />
+      {% else %}
+      <link rel="alternate" hreflang="{{ lang }}" href="{{ lang | prepend: '/index_' | prepend: site.url }}" />
+      {% endif %}
+    {% endfor %}
+    {% endif %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"/>
+  </head>
+  <body onload="setupCopyables()">
+    <div id="wrap">
+      <div id="header" class="{{ page.header-class }}">
+        {% if page.logo %}
+        <img alt="{{ page.title }} logo" src="{{ page.logo | relative_url }}" width="128" height="128">
+        {% elsif site.logo %}
+        <img alt="{{ site.title }} logo" src="{{ site.logo | relative_url }}" width="128" height="128">
+        {% else %}
+        <img alt="project freedom logo" src="{{ "/assets/img/logo.jpg" | relative_url }}" width="128" height="128">
+        {% endif %}
+        <p><a href="{{ site.baseurl }}/"><img alt="project freedom name" src="{{ "/assets/img/name.png" | relative_url }}" width="512"></a></p>
+        {% if t.subtitle %}
+        <p id="subtitle"><strong>{{ t.subtitle }}</strong></p>
+        {% endif %}
+      </div>
+
+      {{ content }}
+    </div>
+
+    {% if site.forkme_nwo %}
+      {% assign forkme_url = "https://github.com/" |
+                             append: site.forkme_nwo %}
+    {% elsif site.github.repository_nwo and site.github.source.branch and site.github.source.path %}
+      {% assign forkme_url = "https://github.com/" |
+                             append: site.github.repository_nwo |
+                             append: "/edit/" |
+                             append: site.github.source.branch |
+                             append: site.github.source.path |
+                             append: "/" |
+                             append: page.path %}
+    {% else %}
+      {% assign forkme_url = "https://github.com/projectfreedomgaming/projectfreedom" %}
+    {% endif %}
+
+    <a href="{{ forkme_url }}"><img id="forkme" src="https://aral.github.io/fork-me-on-github-retina-ribbons/right-grey@2x.png" alt="Fork me on GitHub"></a>
+    <script>
+      function setupCopyables() {
+        if (navigator.clipboard) {
+          const classA = Array.from(document.getElementsByClassName("copyable"))
+               ,classB = Array.from(document.getElementsByClassName("copyable-windows"))
+               ,results = Array.from(new Set(classA.concat(classB)))
+          for (const element of results) {
+            let text = element.innerText.trim();
+            if(text.startsWith("$")) {
+              text = text.substr(1).trimLeft();
+            }
+            const button = document.createElement("button");
+            button.innerHTML = "📋";
+            button.setAttribute("aria-label", "Copy to clipboard");
+            button.onclick = () => {
+              navigator.clipboard.writeText(text);
+              button.innerHTML = "✅";
+              setTimeout(() => button.innerHTML="📋", 1000);
+            }
+            element.appendChild(button);
+          }
+        }
+      }
+    </script>
+</html>
