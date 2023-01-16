@@ -393,15 +393,6 @@ button::-moz-focus-inner {
   background: $color_dallas_approx;
 }
 
-#forkme {
-  width: 149px;
-  height: 149px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-}
-
 #wrap {
   width: 57em;
   max-width: 100%;
@@ -663,11 +654,6 @@ span .amp {
       width: auto;
       text-align: center;
     }
-  }
-
-  #forkme {
-    width: 100px;
-    height: 100px;
   }
 
   #information .row {
