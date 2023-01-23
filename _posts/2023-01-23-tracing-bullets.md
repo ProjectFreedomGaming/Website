@@ -11,6 +11,7 @@ I needed to know if someone else was attempting to write a fantasy core on the *
     <img src="/assets/blog/2023-01-23/Reddit_Comment_1.png" alt="a reddit post" width="45%">
     <img src="/assets/blog/2023-01-23/Reddit_Comment_2.png" alt="a reddit post" width="45%">
 </div>
+<br>
 
 I think the main takeaway ideas are:
 
@@ -46,6 +47,7 @@ So in no time at all, I got this up and running:
 <div style="text-align: center;">
     <img src="/assets/blog/2023-01-23/Simulator_First_Screenshot" alt="Empty simulator window" width="55%">
 </div>
+<br>
 
 It's just a simple **XCode** project, launching **SDL** which opens a window. Nothing fancy but there you have my tracing bullet. This is all the framework I need to start building on, addding the two side: One that runs code written for the console and the other runs the code simulating the console and its various parts.
 
