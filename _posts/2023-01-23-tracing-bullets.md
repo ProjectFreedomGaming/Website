@@ -8,8 +8,8 @@ I'll' try my best to do weekly updates. I know how these things go, but I'm goin
 I needed to know if someone else was attempting to write a fantasy core on the **Pocket**. So I decided to [ask the internet](https://www.reddit.com/r/AnaloguePocket/comments/10csl4g/anyone_working_on_a_custom_open_source_console/) and I think I may have gotten more than I bargained for:
 
 <div style="text-align: center;">
-    <img src="../assets/blog/2023-01-23/Reddit_Comment_1.png" alt="a reddit post" width="45%">
-    <img src="../assets/blog/2023-01-23/Reddit_Comment_2.png" alt="a reddit post" width="45%">
+    <img src="/assets/blog/2023-01-23/Reddit_Comment_1.png" alt="a reddit post" width="45%">
+    <img src="/assets/blog/2023-01-23/Reddit_Comment_2.png" alt="a reddit post" width="45%">
 </div>
 
 I think the main takeaway ideasx are:
