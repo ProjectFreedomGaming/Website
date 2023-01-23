@@ -12,7 +12,7 @@ I needed to know if someone else was attempting to write a fantasy core on the *
     <img src="/assets/blog/2023-01-23/Reddit_Comment_2.png" alt="a reddit post" width="45%">
 </div>
 
-I think the main takeaway ideasx are:
+I think the main takeaway ideas are:
 
 1. I definitely needs to do this 😂.
 1. No one else seems to be doing this.
