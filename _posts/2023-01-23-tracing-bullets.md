@@ -44,7 +44,7 @@ I chose to develop that part of the project using **Xcode** instead of some cust
 So in no time at all, I got this up and running:
 
 <div style="text-align: center;">
-<img src="../assets/blog/2023-01-23/Simulator_First_Screenshot" alt="Empty simulator window" width="55%">
+    <img src="/assets/blog/2023-01-23/Simulator_First_Screenshot" alt="Empty simulator window" width="55%">
 </div>
 
 It's just a simple **XCode** project, launching **SDL** which opens a window. Nothing fancy but there you have my tracing bullet. This is all the framework I need to start building on, addding the two side: One that runs code written for the console and the other runs the code simulating the console and its various parts.
