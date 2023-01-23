@@ -20,7 +20,7 @@ I think the main takeaway ideas are:
 
 First, of course, I needed to order a [**Pocket**](https://www.analogue.co/pocket). Those things are in short supplies so, just like the **Playdate**, you end up on a waiting list of some sort. I'm currenly in group **C (182XXX)** which is slated for, hopefully, sometime this year. Given that they just shipped **129xxx** I've got a while to go. In the **Playdate**'s case I ended up getting one on eBay so I don't know how patient I'm going to be this time around.
 
-Second, I needed to define some basic guidelines for what **Project Freesdom**'s goals are:
+Second, I needed to define some basic guidelines for what **Project Freedom**'s goals are:
 
 - I want to be open-source and **GPL-v3** to be precise. I don't necessarily want to write everything from scratch so if there are good projects that are compatible license-wise then I should build on top of those.
 - I probably don't want to design a whole **CPU** in **FPGA**, so using an existing one would be best.
