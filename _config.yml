@@ -1,8 +1,6 @@
 title: Project Freedom
 description: An open-source fantasy gaming console for the Analog Pocket.
 
-repository: ProjectFreedomGaming/ProjectFreedom
-
 exclude:
   - bin
   - CNAME
