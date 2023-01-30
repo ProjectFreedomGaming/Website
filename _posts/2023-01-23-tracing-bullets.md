@@ -50,6 +50,6 @@ So in no time at all, I got this up and running:
 
 It's just a simple **XCode** project, launching **SDL** which opens a window. Nothing fancy but there you have my tracing bullet. This is all the framework I need to start building on, addding the two side: One that runs code written for the console and the other runs the code simulating the console and its various parts.
 
-If you want to follow along, the repo for **pfSimulator** can be found [here](https://github.com/ProjectFreedomGaming/pfSimulator).
+If you want to follow along, the repo for **pfSimulator** can be found [here](https://github.com/ProjectFreedomGaming/pfSimulator). This week's progress is at commit [242d97f8](https://github.com/ProjectFreedomGaming/pfSimulator/commit/242d97f8c0685ec40d9156878a954fa940eb613a).
 
 With ❤️ from Paris, France.
