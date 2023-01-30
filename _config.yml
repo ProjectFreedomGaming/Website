@@ -27,7 +27,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/projectfreedom-social-card.png
+      image: /assets/img/project-freedom-social-card.png
 
 logo: /assets/img/logo.jpg
 
