@@ -28,13 +28,13 @@ Second, I needed to define some basic guidelines for what **Project Freedom**'s 
 - I want an SDK to support development in **assembly** and **C**. **Lua** may come later if the **CPU** can handle it.
 - I want the SDK to be written in **C** or **Python**. The firmware will be written in **C**. Any custom tools in the toolchain will be written in **Python**.
 
-That last part may be controvertial. I've dabbled in so many other languages over the years and when the **Playdate** came out the first thing we saw was people asking if they could use **C++**, **Rust**, etc... It's just personal preference for me. I want this to be simple and fun. I find **C++** to be just a bloated mess that produces bloated code (if you don't know what you're doing) and  feel the syntax has become a joke over the years too. **Rust** may be cool but I also don't like the syntax which seems antiquated to me.
+That last part may be controvertial. I've dabbled in so many other languages over the years and when the **Playdate** came out the first thing I saw was people asking if they could use **C++**, **Rust**, etc... It's just personal preference for me. I want this to be simple and fun. I find **C++** to be just a bloated mess that produces bloated code (if you don't know what you're doing) and  feel the syntax has become a joke over the years too. **Rust** may be cool but I also don't like the syntax which seems antiquated to me.
 
 I've been doing some **C** again when I got into **Playdate** development and it's super refreshing to get back to a simple, small language even with all its downsides compared to some modern languages.
 
 **Python** is the perfect language as far as I'm concerned. Small. Simple. Powerful. Cross Platform. It's perfect for tools.
 
-So given all that, and since there is so much to do, where do we start?
+So given all that, and since there is so much to do, where do I start?
 
 It's really daunting to start developing each parts separately in the hope that someday they will connect and everything will work. So instead, I'm going to use the tracing bullet technique. The goal is to connect both ends of the problem, on one side user-code written for the console and on the other the screen where the graphics are displayed, right off the bat so that you have something working right away. You can then build on this, keeping everything working at all times.
 
