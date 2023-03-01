@@ -3,7 +3,7 @@ en:
   subtitle: An open-source fantasy gaming console for the Analog Pocket.
   pagecontent:
     question: What is it?
-    what: <b>Project Freedom</b> is a fantasy console, much like <a href="https://www.lexaloffle.com/pico-8.php">pico8</a>, <a href="https://tic80.com">tic-80</a> or <a href="https://www.arduboy.com">arduboy</a>, but for the <a href="https://www.analogue.co/pocket">Analog Pocket</a> platform. There isn't much to see here yet but the main purpose of this site is to host a <a href="/blog/">blog</a> so that the journey can be documented.    
+    what: Project Freedom's <b>pfx1</b> is a fantasy console, much like <a href="https://www.lexaloffle.com/pico-8.php">pico8</a>, <a href="https://tic80.com">tic-80</a> or <a href="https://www.arduboy.com">arduboy</a>, but for the <a href="https://www.analogue.co/pocket">Analog Pocket</a> platform. There isn't much to see here yet but the main purpose of this site is to host a <a href="/blog/">blog</a> so that the journey can be documented.    
     blog: Latest Updates
     foot:
       code: Made with ❤️ in Paris, France by <b><a rel="me" href="https://mastodon.gamedev.place/@didier">Didier Malenfant</a></b>. Website originally by <a href="https://exomel.com/" target="_blank">Rémi Prévost</a>, <a href="https://mikemcquaid.com" target="_blank">Mike McQuaid</a> and <a href="https://cargocollective.com/danilalo" target="_blank">Danielle Lalonde</a> and forked from <a href="https://brew.sh" target="_blank">brew.sh</a>. This will by customized eventually 😔. <b>Analog Pocket</b> is a registered trademark of Analogue, Inc. This project is not sponsored by, endorsed or otherwise affiliated with Analogue, Inc. <a href="/pages/thanks">Greetz!</a>.
