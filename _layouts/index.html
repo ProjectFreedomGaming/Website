@@ -17,16 +17,27 @@ layout: base
         <div class="centered">
             {{ t.pagecontent.what }}
         </div>
-        <br />
-        <br />
       </div>
     </li>
     <li>
-    <div class="group row">
-      <div class="button">
-        <p>Check out the official <a href="/blog/">blog</a> or head over to the <a href="https://github.com/ProjectFreedomGaming/ProjectFreedom/discussions">discussion</a> forums. A lot of people are helping or have helped along the way to make this project a reality, they deserve my <a href="/pages/thanks">thanks</a>.</p>
+      <div class="group row">
+        <h2 id="question">{{ t.pagecontent.blog }}</h2>
         <br />
-        <br />
+        <ul class="posts">
+          {% for post in site.posts %}
+              <a href="{{ post.url }}" title="{{ post.title }}">
+                <h2>
+                  {{ post.title }}
+                </h2>
+                <h3>{{ post.date | date_to_string }}</h3>
+              </a>
+              <div class="postcontent">{{ post.excerpt }}</div>
+              <br/>
+          {% endfor %}
+          <div class="centered small">
+            Click on the title to expand each post.
+          </div>
+        </ul>
       </div>
     </li>
     <li>
